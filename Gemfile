@@ -10,10 +10,12 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'slim-rails', '~> 3.1', '>= 3.1.2'
+gem 'thor', '= 0.19.1'
+
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -26,6 +28,8 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'annotate', '~> 2.7', '>= 2.7.1'
+  gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 end
 
 group :test do
