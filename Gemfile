@@ -15,9 +15,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'slim-rails', '~> 3.1', '>= 3.1.2'
 gem 'thor', '= 0.19.1'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'react-rails', '~> 1.10'
 
 gem 'devise', '~> 4.2'
 gem 'devise-bootstrap-views', '~> 0.0.10'
+gem 'aasm', '~> 4.11', '>= 4.11.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
