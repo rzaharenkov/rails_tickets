@@ -7,8 +7,29 @@ html
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   body
-    p.notice
-      = notice
-    p.alert
-      = alert
-    = yield
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed aria-controls="navbar" \
+                                         aria-expanded="false" \
+                                         data-target="#navbar" \
+                                         data-toggle="collapse" \
+                                         type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to 'Rails Tickets', root_path, class: 'navbar-brand'
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.pull-right
+            - if user_signed_in?
+              li
+                p.navbar-text
+                  span class="glyphicon glyphicon-user" aria-hidden="true"
+                  | &nbsp;
+                  = current_user.email
+              li= link_to t('.sign_out', default: 'Sign Out'), destroy_session_path(:user), method: :delete
+    .container.page-content
+      = render 'shared/alert', message: notice
+      = render 'shared/alert', message: alert, type: 'danger'
+      = yield

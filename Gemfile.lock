@@ -44,7 +44,12 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
     arel (7.1.4)
+    autoprefixer-rails (6.7.7)
+      execjs
     bcrypt (3.1.11)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -62,6 +67,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.10)
     diff-lcs (1.3)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -208,9 +214,11 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.7, >= 2.7.1)
+  bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.2)
+  devise-bootstrap-views (~> 0.0.10)
   factory_girl_rails (~> 4.8)
   forgery (~> 0.6.0)
   jbuilder (~> 2.5)

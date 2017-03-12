@@ -14,8 +14,10 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'slim-rails', '~> 3.1', '>= 3.1.2'
 gem 'thor', '= 0.19.1'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'devise', '~> 4.2'
+gem 'devise-bootstrap-views', '~> 0.0.10'
 
 group :development, :test do
   gem 'byebug', platform: :mri

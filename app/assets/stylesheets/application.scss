@@ -1,0 +1,8 @@
+//= require devise_bootstrap_views
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.page-content {
+  padding-top: ($navbar-height + 10);
+}
