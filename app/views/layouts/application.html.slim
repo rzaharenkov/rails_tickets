@@ -30,6 +30,5 @@ html
                   = current_user.email
               li= link_to t('.sign_out', default: 'Sign Out'), destroy_session_path(:user), method: :delete
     .container.page-content
-      = render 'shared/alert', message: notice
-      = render 'shared/alert', message: alert, type: 'danger'
+      = react_component('Shared.AlertsList', messages: flash_messages)
       = yield

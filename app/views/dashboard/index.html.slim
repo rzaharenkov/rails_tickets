@@ -1,2 +1,9 @@
-h1 Dashboard#index
-p Find me in app/views/dashboard/index.html.slim
+div#admin_dashboard
+
+javascript:
+  $(function() {
+    ReactDOM.render(
+      React.createElement(AdminDashboard, { users_url: '#{admin_users_path}' }),
+      document.getElementById('admin_dashboard')
+    );
+  });

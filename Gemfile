@@ -14,8 +14,11 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'slim-rails', '~> 3.1', '>= 3.1.2'
 gem 'thor', '= 0.19.1'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'react-rails', '~> 1.10'
+gem 'react-bootstrap-rails', '~> 0.30.2'
+gem 'sugar-rails', '~> 1.4', '>= 1.4.1'
 
 gem 'devise', '~> 4.2'
 gem 'devise-bootstrap-views', '~> 0.0.10'
@@ -33,7 +36,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'annotate', '~> 2.7', '>= 2.7.1'
-  gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 end
 
 group :test do
