@@ -1,9 +1,1 @@
-div#admin_dashboard
-
-javascript:
-  $(function() {
-    ReactDOM.render(
-      React.createElement(AdminDashboard, { users_url: '#{admin_users_path}' }),
-      document.getElementById('admin_dashboard')
-    );
-  });
+= react_component('AdminDashboard', users_url: admin_users_path)

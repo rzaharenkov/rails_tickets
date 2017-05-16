@@ -66,7 +66,8 @@ namespace 'Users', () ->
 
         if @state.user
           React.createElement(Users.Form,
-                              user: @state.user,
+                              record: @state.user,
+                              collectionUrl: @props.collection_url,
                               handleCreateRecord: @createRecord,
                               handleUpdateRecord: @updateRecord,
                               handleCloseForm: @closeForm)
