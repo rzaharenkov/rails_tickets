@@ -4,8 +4,8 @@ html
     title
       | Rails Tickets
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
+    = stylesheet_pack_tag 'admin'
+    = javascript_pack_tag 'admin'
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container

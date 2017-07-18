@@ -20,6 +20,8 @@ gem 'react-rails', '~> 1.10'
 gem 'react-bootstrap-rails', '~> 0.30.2'
 gem 'sugar-rails', '~> 1.4', '>= 1.4.1'
 
+gem 'webpacker', '~> 2.0'
+
 gem 'devise', '~> 4.2'
 gem 'devise-bootstrap-views', '~> 0.0.10'
 gem 'aasm', '~> 4.11', '>= 4.11.1'
